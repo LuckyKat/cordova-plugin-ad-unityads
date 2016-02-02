@@ -40,8 +40,5 @@
 
 		<header-file src="src/ios/UnityAdsPlugin.h" />
 		<source-file src="src/ios/UnityAdsPlugin.m" />
-	</platform>
-	
-	<!-- dependency -->
-	<dependency id="cordova-plugin-ad-unityadssdk" url="https://github.com/cranberrygame/cordova-plugin-ad-unityadssdk" />	
+	</platform>	
 </plugin>
