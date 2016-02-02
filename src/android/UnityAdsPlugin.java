@@ -191,11 +191,12 @@ public class UnityAdsPlugin extends CordovaPlugin {
 
             if (UnityAds.canShow() && UnityAds.canShowAds()) {
                 PluginResult pr = new PluginResult(PluginResult.Status.OK, "YES");
+		    	callbackContext.sendPluginResult(pr);
             } else {
                 PluginResult pr = new PluginResult(PluginResult.Status.OK, "NO");
+		    	callbackContext.sendPluginResult(pr);
             }
 
-		    callbackContext.sendPluginResult(pr);
 
 			return true;
 		}
