@@ -13,7 +13,7 @@
 @synthesize email;
 @synthesize licenseKey_;
 @synthesize validLicenseKey;
-static NSString *TEST_GAME_ID = @"42521";
+static NSString *TEST_GAME_ID = @"83054";
 static NSString *TEST_VIDEO_AD_PLACEMENT_ID = @"defaultZone";
 static NSString *TEST_REWARDED_VIDEO_AD_PLACEMENT_ID = @"rewardedVideoZone";
 //
