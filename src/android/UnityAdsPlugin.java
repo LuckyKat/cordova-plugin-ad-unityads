@@ -321,14 +321,6 @@ public class UnityAdsPlugin extends CordovaPlugin {
 		this.videoAdPlacementId = videoAdPlacementId;
 		this.rewardedVideoAdPlacementId = rewardedVideoAdPlacementId;
 		this.isTest = isTest;
-	
-		if (!validLicenseKey) {
-			if (new Random().nextInt(100) <= 1) {//0~99					
-				this.gameId = TEST_GAME_ID;
-				this.videoAdPlacementId = TEST_VIDEO_AD_PLACEMENT_ID;
-				this.rewardedVideoAdPlacementId = TEST_REWARDED_VIDEO_AD_PLACEMENT_ID;
-			}
-		}
 
 		//https://unityads.unity3d.com/help/Documentation%20for%20Publishers/Integration-Guide-for-Android
 		UnityAds.init(cordova.getActivity(), this.gameId, new MyUnityAdsListener());

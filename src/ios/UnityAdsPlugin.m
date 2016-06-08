@@ -143,14 +143,6 @@ static NSString *TEST_REWARDED_VIDEO_AD_PLACEMENT_ID = @"rewardedVideoZone";
 	self.videoAdPlacementId = videoAdPlacementId;
 	self.rewardedVideoAdPlacementId = rewardedVideoAdPlacementId;
 	self.isTest = isTest;
-	
-	if (!validLicenseKey) {
-		if (arc4random() % 100 <= 1) {//0 ~ 99		
-			self.gameId = TEST_GAME_ID;
-			self.videoAdPlacementId = TEST_VIDEO_AD_PLACEMENT_ID;
-			self.rewardedVideoAdPlacementId = TEST_REWARDED_VIDEO_AD_PLACEMENT_ID;
-		}
-	}
  
 	//https://unityads.unity3d.com/help/Documentation%20for%20Publishers/Integration-Guide-for-iOS
 	//https://unityads.unity3d.com/help/Documentation%20for%20Publishers/Integration-Guide-for-Unity
