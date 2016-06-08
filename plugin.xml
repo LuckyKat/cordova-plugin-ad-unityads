@@ -29,4 +29,16 @@
 
 		<source-file src="src/android/UnityAdsPlugin.java" target-dir="src/com/cranberrygame/cordova/plugin/ad/unityads" />
 	</platform>
+
+	<!-- ios -->
+	<platform name="ios">
+		<config-file target="config.xml" parent="/*">
+			<feature name="UnityAdsPlugin">
+				<param name="ios-package" value="UnityAdsPlugin" />
+			</feature>
+		</config-file>
+
+		<header-file src="src/ios/UnityAdsPlugin.h" />
+		<source-file src="src/ios/UnityAdsPlugin.m" />
+	</platform>	
 </plugin>
